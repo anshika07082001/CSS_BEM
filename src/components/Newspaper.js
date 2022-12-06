@@ -4,10 +4,12 @@ import Footer from './Footer'
 const Newspaper = () => {
   return (
   <div className='container__div'>
+    {/* Header Section */}
     <header className='container__header'>
       <p>ISSUE, JUNE</p>
       <p>NEWS</p>
     </header>
+    {/* Body Section */}
     <section className='container__section'>
       <p>NEWSPAPER</p>
     </section>
@@ -27,6 +29,7 @@ const Newspaper = () => {
         <span>lorem Lorem ummy texook. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</span>
       </div>
     </section>
+    {/* footer section */}
     <section className='section--footer'>
       <Footer/>
       <Footer/>
