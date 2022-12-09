@@ -1,29 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: rgb(51, 50, 50);
-    padding: 10px;
 }
 
 .container {
     background-color: whitesmoke;
-    height: 1050px;
+    min-height: 1050px;
     margin:2% auto;
     width: 700px;
     padding: 50px;
 }
 
-.container__div {
-    height: 800px;
-    width: 700px;
-}
-
 /* header section */
 
-.container__header {
+.header {
     align-items: center;
     border-bottom: 3px solid grey;
     border-top: 3px solid grey;
@@ -34,15 +23,12 @@ body {
     font-size: 1.4rem;
     height: 50px;
     justify-content: space-between;
-    width: auto;
 }
 
 /* main body section */
-
-.container__section {
+.heading {
     border-bottom: 3px solid grey;
     height: 120px;
-    width: auto;
     font-size: 7.5rem;
     align-items: center;
     display: flex;
@@ -50,86 +36,194 @@ body {
     color: #363434;
 }
 
-.container__section--section {
-    height: 400px;
+.article {
+    border-bottom: 3px solid grey;
+    min-height: 120px;
+    font-size: 7.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #363434;
+}
+
+.article--section1 {
+    min-height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.section__div__left {
-    height: 340px;
-    width: 320px;
+.article__content {
+    min-height: 340px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: justify; 
+}
+
+.article__leftDiv {
+    min-height: 340px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.section__div__left p {
+.article__content p {
     font-size: 1.3rem;
     min-height: 90px;
 }
 
-.section__div__left label {
+.article__content label {
     font-size: 0.9rem;
     font-weight: 700;
     min-height: 40px;
 }
 
-.container__div span {
-    font-size: 0.9rem;
-    line-height: 1.4em;
-}
-
-.section--right {
+.article--contentRight {
     background-color: #cfcfcf;
+    padding: 15px;
 }
 
-.section--left {
+.article--left {
     background-color: #cfcfcf;
-    height: 190px;
+    min-height: 250px;
 }
 
-.container--section {
-    height: 250px;
+.article--section2 {
+    min-height: 250px;
     justify-content: space-between;
 }
 
-.container--right {
-    height: 250px;
-    padding-top: 60px;
+.article--right {
+    min-height: 250px;
+    padding: 26px;
 }
 
-.container--section label {
+.article__leftDiv label {
     min-height: 30px;
 }
 
-.container--section p {
+.article__leftDiv p {
     min-height: 60px;
+    font-size: 1.3rem;
+}
+
+.article__content span {
+    font-size: 1rem;
+}
+
+.article__leftDiv span {
+    font-size: 1rem;
 }
 
 /* footer section */
 
-.section--footer {
+.footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 15px;
+    min-height: 300px;
 }
 
-.section__div {
+.footer__content {
     color: #4a4747;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    min-height: 150px;
     text-align: justify;
-    width: 210px;
+    min-width: 210px;
+    padding: 15px;
 }
 
-.section__div p{
+.footer__content p{
     font-size: 1.5rem;
     min-height: 40px;
+}
+
+.footer__content span {
+    font-size: 1rem;
+}
+
+@media screen and (max-width:900px){
+    .container {
+        max-width: 600px;
+    }
+    .header {
+        max-width: 600px;
+    }
+    .heading {
+        max-width: 600px;
+    }
+    .heading p{
+        font-size: 6rem;
+    }
+    .article {
+        max-width: 600px;
+        padding: 10px;
+        display: block;
+    } 
+    .article__content {
+        min-width: 220px;
+    }
+    .footer {
+        display: block;
+    }
+    .footer__content {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .container {
+        max-width: 500px;
+    }
+    .header {
+        max-width: 600px;
+    }
+    .heading {
+        max-width: 600px;
+    }
+    .heading p{
+        font-size: 4.5rem;
+    }
+    .article {
+        max-width: 600px;
+        padding: 15px;
+    } 
+    .article__content {
+        min-width: 120px;
+    }
+    .footer {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container {
+        max-width: 400px;
+    }
+    .header {
+        max-width: 600px;
+    }
+    .heading {
+        max-width: 600px;
+    }
+    .heading p{
+        font-size: 4rem;
+    }
+    .article {
+        max-width: 600px;
+    }
+    .article__content {
+        min-width: 80px;
+    }
+    .footer {
+        min-width: 80px;
+    }
 }

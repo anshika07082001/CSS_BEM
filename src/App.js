@@ -3,9 +3,7 @@ import Newspaper from './components/Newspaper';
 
 function App() {
   return (
-    <div className='container'>
-      <Newspaper/>
-    </div>
+  <Newspaper/>
   );
 }
 
